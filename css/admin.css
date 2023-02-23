@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Welcome-admin style */
+.nav-admin .title {
+  background-color: blue;
+  color: white;
+}
+.nav-admin .menu {
+  width: 20%;
+}
+.nav-admin .menu li {
+  list-style: none;
+}
+.nav-admin .menu a {
+  text-decoration: none;
+  color: white;
+}
+
+/* admin style */
+.admin {
+  text-align: center;
+  margin-top: 100px;
+}
+.admin .title {
+  margin-bottom: 15px;
+}
+.admin form .submit input[type="submit"] {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  width: 80px;
+  padding: 10px;
+  border: none;
+}
+.admin form input {
+  width: 200px;
+  padding: 10px;
+  margin: 10px 5px;
+}
+.admin .error {
+  color: red;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* all-manage-page style */
+.all-manage-page {
+  width: 80%;
+  padding: 10px 20px;
+}
+.all-manage-page table {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+.all-manage-page td {
+  border: 1px solid black;
+}
+.all-manage-page button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* add-product style */
+.add-product {
+  margin: 0 10px;
+}
+input {
+  height: 40px;
+}
+input {
+  padding-left: 10px;
+}
+
+.catagories,
+img-product,
+.detail,
+input[type="text"],
+input[type="number"] {
+  margin: 10px 0;
+}
+.add-product form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}

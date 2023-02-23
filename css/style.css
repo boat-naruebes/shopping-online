@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial";
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+nav ul {
+  list-style: none;
+}
+.menu-nav a,
+.login-nav a {
+  text-decoration: none;
+  color: black;
+}
+.menu-nav form {
+  display: flex;
+  align-items: center;
+}
+.menu-nav form input[type="text"] {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.menu-nav form input[type="submit"] {
+  background-color: rgb(4, 115, 213);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.menu-nav,
+.login-nav {
+  display: flex;
+  align-items: center;
+}
+.menu-nav li,
+.login-nav li {
+  padding: 8px;
+}
+
+/* icon nav */
+.login-nav li a {
+  padding-left: 5px;
+}
+.login-nav li .login {
+  color: red;
+}
+
+/* sidebar */
+section .container-sidebar {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+.sidebar li {
+  list-style: none;
+  margin: 15px 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+/* items */
+.container-items {
+  display: grid;
+  width: 100%;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 200px));
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.info a {
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+}
+.info .amount {
+  display: inline-block;
+  padding: 15px;
+  background-color: rgba(129, 129, 129, 0.704);
+  border-radius: 5px;
+  font-size: 14px;
+}
+.empy {
+  position: relative;
+  bottom: 20px;
+  color: red;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.banner img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .login-nav li {
+    margin: 0 20px;
+  }
+  .menu-nav li {
+    margin: 0 8px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .menu-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .menu-nav form input[type="submit"] {
+    margin-left: 10px;
+  }
+  .login-nav li {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .login-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* login style */
+
+/* right nav */
+.login-nav li a {
+  padding-left: 5px;
+}
+
+/* login */
+.login .container {
+  width: 100%;
+}
+
+.login {
+  text-align: center;
+}
+.login .title {
+  margin: 10px;
+}
+.login img {
+  width: 150px;
+  height: 150px;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.login form input[type="text"],
+.login form input[type="password"] {
+  text-align: center;
+  width: 250px;
+  height: 30px;
+  margin: 10px;
+  padding: 15px;
+}
+.login form input[type="submit"] {
+  width: 100px;
+  height: 30px;
+  background-color: green;
+  color: white;
+  border: none;
+  margin: 10px;
+}
+.login .go-regis {
+  display: inline-block;
+  margin: 5px;
+}
+
+/* register style */
+.regis {
+  text-align: center;
+}
+.regis .container {
+  width: 300px;
+}
+.regis .logo img {
+  width: 300px;
+}
+.regis .title {
+  margin: 15px;
+}
+.regis .form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.regis .form input,
+.regis .form textarea {
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+}
+.regis .form textarea {
+  height: 130px;
+}
+.regis .form input[type="submit"] {
+  width: 250px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+.regis .form .go-login {
+  display: inline-block;
+  color: blue;
+  text-decoration: none;
+  margin: 15px;
+}
+
+/* order style */
+
+header h1 {
+  margin: 15px 0;
+}
+.order {
+  width: 80%;
+  border-collapse: collapse;
+}
+.order td {
+  border: 1px solid black;
+  padding-left: 10px;
+}
+
+/* shopping cart */
+header h1 {
+  margin: 15px 0;
+}
+.cart {
+  width: 80%;
+  border-collapse: collapse;
+}
+.cart td {
+  border: 1px solid black;
+  padding: 10px 10px;
+}
+.cart input[type="submit"],
+.cart .product_page a {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.cart .product_page a {
+  background-color: rgb(51, 185, 238);
+  text-decoration: none;
+}
+/* buy-order */
+
+.send-detail h3 {
+  margin: 20px 0;
+}
+.send-detail table td {
+  padding-bottom: 20px;
+  padding-right: 40px;
+}
+.send-detail input,
+.send-detail textarea {
+  width: 100%;
+  height: 40px;
+}
+.send-detail input[type="submit"] {
+  background-color: green;
+  border: none;
+  color: white;
+}
+
+/* product detail */
+.product-detail .info {
+  display: flex;
+  flex-direction: column;
+}
+.product-detail .info .price {
+  margin: 5px;
+}
+.product-detail .info .buy {
+  width: 80px;
+}
+.product-detail .info .amount {
+  color: black;
+}
+.product-detail .info .amount,
+.product-detail .info .buy {
+  margin: 10px auto;
+}
+.product-detail .detail {
+  margin: 0 auto;
+  width: 50%;
+}
+.product-detail .detail p {
+  text-align: center;
+}
+
+/* check style */
+.error {
+  color: red;
+  padding-top: 5px;
+  margin: 0 auto;
+}
+.sussess {
+  background-color: rgba(9, 200, 9, 0.316);
+  color: green;
+  padding: 15px;
+  border-radius: 5px;
+}
